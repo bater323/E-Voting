@@ -1,0 +1,81 @@
+/* Forms Sass */
+
+/* APPOINTMENT FORM STYLE */
+.appointment_form{
+  background-color: $white-f3;
+  padding: 15px 35px;
+  input {
+	border-radius: 0;
+	box-shadow: none;
+	height: 40px;
+  }
+}
+.appointment_view {
+  .modal-dialog {
+    max-width: 800px; 
+    width: 100%;
+  }
+}
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all, 
+.ui-timepicker-list .ui-timepicker-selected:hover, 
+.ui-timepicker-list li:hover, 
+li.ui-timepicker-selected {
+  background-color: $black-22;
+  color: $white-f3;
+}
+.ulockd-apmnmnt-schedule {
+  border: 1px solid $gray-lighter;
+  padding: 10px 15px;
+  text-align: center;
+}
+table {
+  &.table {
+  	&.ulockd-one {
+  	  border: 1px solid $gray-lighter;
+  	  h3 {
+  		margin-top: 0;
+  	  }
+  	}
+  	&.ulockd-two {
+  	  border: 1px solid $gray-lighter;
+  	  h3 {
+  		margin-top: 0;
+  	  }
+  	}
+  }
+}
+.table.ulockd-one>tbody>tr>td, 
+.table.ulockd-one>tbody>tr>th, 
+.table.ulockd-one>tfoot>tr>td, 
+.table.ulockd-one>tfoot>tr>th, 
+.table.ulockd-one>thead>tr>td, 
+.table.ulockd-one>thead>tr>th {
+  text-align: center;
+}
+/* BOOKING FORM STYLE */
+.booking_form {
+  background-color: $white-f3;
+  padding: 0 35px 5px;
+}
+.booking_select,
+.booking_form input{
+  border-radius: 0;
+  box-shadow: none;
+  height: 45px;
+}
+/* Login/Register */
+form {
+  &.ulockd-login-form,
+  &.ulockd-reg-form {
+    background-color: $white-f6;
+    padding: 10px 30px 40px;
+  }
+}
+.ulockd-login-form,
+.ulockd-reg-form {
+  input {
+    border-radius: 0;
+    box-shadow: none;
+    height: 40px;
+  }
+}

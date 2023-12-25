@@ -1,0 +1,366 @@
+/* Service Sass */
+
+//== First Service
+.ulockd-service-two {
+  z-index: 1;
+  &:before {
+	background-color: rgba($white-rgb, $alpha8);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+  }
+}
+.service-col {
+  background-color: $white-ff;
+  text-align: center;
+  @include transition(all 0.3s ease-in-out 0s);
+  .srvc-icon {
+	color: $white-ff;
+	font-size: 30px;
+	padding: 8px 13px;
+  } 
+  .srvc-details {
+	padding: 10px 15px;
+	h3 {
+	  font-size: 22px;
+	  @include transition(all 0.2s ease-in-out 0s);
+	}
+  }
+}
+//== Service Details
+.ulockd-pd-content {
+  h3 {
+	color: $black-33;
+    margin-bottom: 15px;
+  }
+}
+.ulockd-all-service {
+  margin-top: 15px;
+  a {
+	  padding: 10px 25px;	
+    border-radius: 0;
+    margin-bottom: 5px;
+	  &.active {
+	    background-color: $black-22;
+	    border-color:  $black-22;
+	  }
+  }
+}
+.list-group-item {
+  &.active {
+  background-color: $black-22; 
+    &:focus,
+    &:hover, {      
+      background-color: $black-22; 
+    }
+  }
+} 
+.ulockd-inr-brochure {
+  background-color: $white-f5;
+  margin-top: 35px;
+  padding: 10px 30px;
+  p {
+	  margin-bottom: 22px;
+  }
+  ul {
+  	li {
+  	  a {
+		    font-size: 14px;
+		    line-height: 24px;
+		    margin-bottom: 10px;
+		    text-transform: uppercase;
+	    }
+  	}
+  }
+}
+//== Feature Icon Box
+.feature-service {
+  background-color: $white-f9;
+}
+.icon_box {
+  padding: 20px 0 0;
+  .icon {
+    margin-top: 6px;
+    @include transition(all 0.3s ease-in-out 0s);
+    i {
+      font-size: 24px;
+      height: 55px;
+      line-height: 56px;
+      text-align: center;
+      width: 55px;
+    }
+  }
+  &:hover {
+    .icon {
+      -webkit-transform: scale(1.4);
+      -moz-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      -o-transform: scale(1.4);
+      transform: scale(1.4);
+      i {
+        color: $white-ff !important;
+        @include transition(all 0.2s ease-in-out 0s);
+      }
+    }
+  }
+  .ib_details {
+    margin-left: 75px;
+    &.left {
+      margin-right: 75px;
+      margin-left: 0;
+    }
+    h4 {
+      margin-top: 0;
+    }
+  }
+}
+//== fcolmn
+.fslmn-one {
+  border: 1px solid $gray-gainsboro;
+  position: relative;
+  @include transition(all 0.5s ease-in-out);
+  &:hover {
+    cursor: pointer;
+  }
+  .caption {
+    padding: 20px 15px;
+  }
+  h3 {
+    margin-top: 0;
+  }
+  .btn {
+    padding: 5px 15px;
+  }
+}
+//== Service Pagination
+.pagination>.active>a {
+  color: #fff !important;
+}
+
+//== Features Tab
+ul {
+  &.features-tab {
+    border: none;
+    li {
+      a {
+        border: 1px solid $gray-gainsboro;
+        border-radius: 0;
+        margin-left: 5px;
+        margin-bottom: 25px;
+        position: relative;
+        @include transition(all 0.3s ease-in-out);
+      }
+      &.active {
+        a {
+          &:before {
+            content: "";
+            height: 20px;
+            position: absolute;
+            top: 31px;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.features-tab>li.active>a,
+.features-tab>li.active>a:focus, 
+.features-tab>li.active>a:hover {
+  color: $black-33;
+}
+//== Feature Services
+.our-service {
+  background-color: $white-f9;
+}
+.fstory {
+  position: relative;
+}
+.media-heading {
+  @include transition(all 0.3s ease-in-out);
+}
+form {
+  &.volunteer-reg-form {
+    background-color: $white-f9;
+    padding: 10px 15px 20px;
+    input {
+      border-radius: 0;
+      box-shadow: none;
+      height: 45px;
+    }
+  }
+}
+//== Our Project
+.pb-details {
+  h3 {
+    margin-top: 0;
+  }
+}
+
+//== Second Service
+.ulockd-title-icon {
+  color: $black-22;
+  font-size: 90px;
+  left: 0;
+  opacity: 0.4;
+  position: absolute;
+  right: 0;
+  top: -79px;
+  z-index: 0;
+}
+.ulockd-service-three {
+  background-color: $white-f9;
+}
+.ficon-box {
+  background-color: $white-ff;
+  border: 1px solid $gray-gainsboro;
+  padding: 15px 25px;
+  position: relative;
+  z-index: 999;
+  &:hover {
+    cursor: pointer;
+    span {
+      color: $white-ff !important;
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+    }
+  }
+  .ficon {
+    border: 1px solid $gray-gainsboro;
+    font-size: 48px;
+    line-height: 1.3em;
+    margin-top: 0px;
+    padding: 0 15px;
+    position: fixed;
+    @include transition(all 0.4s ease-in-out 0s);
+    h5 {
+      letter-spacing: 1px;
+      margin-bottom: 0;
+      @include transition(all 0.2s ease-in-out 0s);
+      text-transform: uppercase;
+    }
+  }
+}
+.fib-details {
+  display: inline-block;
+  margin-top: 65px;
+}
+
+//== Feature Service Section
+.ulockd-dtitle {
+  margin-bottom: 70px;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.fservice-box {
+  position: relative;
+  .db-thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  .db-overlayer {
+    bottom: 0;
+    border: 1px solid $white-ff;
+    height: 100%;
+    padding-top: 20%;
+    position: absolute;
+    text-align: center;
+    left: -100%;
+    @include transition(all 0.4s ease-in-out 0s);
+    width: 100%;
+    span {
+      border: 3px solid $white-ff;
+      bottom: 10px;
+      color: $white-ff;
+      font-size: 40px;
+      line-height: 1.3em;
+      padding: 0 10px;
+      position: absolute;
+      right: 10px;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .db-overlayer {
+      left: 0;
+    }
+    .db-details {
+      .wsixty {
+        width: 80%;
+      }
+    }
+  }
+  h3 {
+    margin-top: 0;
+    @include transition(all 0.2s ease-in-out 0s);
+  }
+  .db-details { 
+    padding: 10px 0;
+    button {
+      padding: 5px 20px;
+    }
+    &.inner {
+      padding: 15px 20px;
+    }
+    .wsixty {
+      height: 3px;
+      margin-bottom: 15px;
+      width: 60px;
+      @include transition(all 0.5s ease-in-out 0s);
+    }
+  }
+}
+/* Case Study */
+.case-box {
+  position: relative;
+  .cb-thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  .cb-overlay {
+    bottom: 0;
+    border-bottom: 3px solid $white-ff;
+    height: 100%;
+    padding: 8% 15px;
+    position: absolute;
+    text-align: center;
+    top: -100%;
+    @include transition(all 0.4s ease-in-out 0s);
+    width: 100%;
+    span {
+      border: 3px solid $white-ff;
+      bottom: 10px;
+      color: $white-ff;
+      font-size: 36px;
+      line-height: 1.3em;
+      padding: 0 10px;
+      right: 10px;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .cb-overlay {
+      top: 0;
+    }
+  }
+  h3 {
+    color: $white-ff; 
+    @include transition(all 0.2s ease-in-out 0s);
+  }
+  p {    
+    color: $white-ff;
+  }
+}

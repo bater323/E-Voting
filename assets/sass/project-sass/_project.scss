@@ -1,0 +1,131 @@
+/* Project Sass */
+
+/* Project One  */
+.project-box {
+  background-color: $white-ff;
+  color: $white-ff;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  &:before,
+  &:after {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	content: '';
+  	@include transition(all 0.45s ease);
+  }
+  &:before {
+	  -webkit-transform: skew(30deg) translateX(-80%);
+	  transform: skew(30deg) translateX(-80%);
+  }
+  &:after {
+	  -webkit-transform: skew(-30deg) translateX(-70%);
+	  transform: skew(-30deg) translateX(-70%);
+  }
+  img {
+	  backface-visibility: hidden;
+	  max-width: 100%;
+	  vertical-align: top;
+  }
+  figcaption {
+	  bottom: 0px;
+	  left: 0px;
+	  padding: 25px 40% 25px 20px;
+	  position: absolute;
+	  right: 0px;
+	  top: 0px;
+	  z-index: 1;
+    &:before,
+    &:after {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+  	  @include box-shadow(0 0 20px lighten($black-rgb, $alpha7) !important);
+	  content: '';
+	  z-index: -1;
+    }
+	&:before {
+	  -webkit-transform: skew(30deg) translateX(-100%);
+	  transform: skew(30deg) translateX(-100%);
+	}
+	&:after {
+	  -webkit-transform: skew(-30deg) translateX(-90%);
+	  transform: skew(-30deg) translateX(-90%);
+	}
+  }
+  h1,
+  p {
+	  margin: 0;
+	  opacity: 0;
+	  letter-spacing: 1px;
+  }
+  h1 {
+	  font-weight: 700;
+	  line-height: 1em;
+	  text-transform: uppercase;
+  }
+  p {
+	  font-size: 0.9em;
+  }
+  a {
+    opacity: .01;
+  }
+  &:hover {
+  	a {
+	  opacity: 1;
+	}
+  }
+}
+.project-box *,
+.project-box *:before,
+.project-box *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  @include transition(all 0.45s ease);
+}
+.project-box:hover h1,
+.project-box.hover h1,
+.project-box:hover p,
+.project-box.hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 0.9;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.project-box:hover:before,
+.project-box.hover:before {
+  -webkit-transform: skew(30deg) translateX(-20%);
+  transform: skew(30deg) translateX(-20%);
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+.project-box:hover:after,
+.project-box.hover:after {
+  -webkit-transform: skew(-30deg) translateX(-10%);
+  transform: skew(-30deg) translateX(-10%);
+}
+.project-box:hover figcaption:before,
+.project-box.hover figcaption:before {
+  -webkit-transform: skew(30deg) translateX(-40%);
+  transform: skew(30deg) translateX(-40%);
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+.project-box:hover figcaption:after,
+.project-box.hover figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(-30%);
+  transform: skew(-30deg) translateX(-30%);
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}

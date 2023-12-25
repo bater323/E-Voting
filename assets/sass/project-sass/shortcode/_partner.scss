@@ -1,0 +1,45 @@
+/* Partner Sass */
+
+.ulockd-partner {
+  border-bottom: 1px solid $gray-lightgrey;
+  border-top: 1px solid $gray-lightgrey;
+}
+.partner-thumb {
+  border: 5px solid $white-ff;
+  margin-bottom: 35px;
+  padding: 25px 20px;
+  @include transition(all 0.4s ease-in-out);
+  &:hover {
+	@include box-shadow(0 10px 5px 0 rgba($black-rgb, $alpha2) !important);
+  }
+}
+.ulockd-partner-thumb {
+	&:hover {
+		img  {
+		  cursor: pointer;
+		}
+	}
+}
+.partner-slider {
+  border: 1px solid $gray-gainsboro;
+  background: $white-ff;
+  padding: 25px 0;
+  @include transition(all 0.4s ease-in-out);
+  &:hover {
+  @include box-shadow(0 10px 5px 0 rgba($black-rgb, $alpha2) !important);
+	background-color: $white-f5;
+  }
+}
+
+/* Office Location */
+.office-location {
+	h3 {
+		margin-top: 0;
+	}
+	li {
+		a {
+		  font-size: 16px;
+		  line-height: 24px;
+		}
+	}
+}

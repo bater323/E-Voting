@@ -1,0 +1,120 @@
+/* Initialize Variables */
+@import "project-sass/variables.scss";
+
+body {
+  background-color: $black-11;
+  color: $white-ff;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $gray-lighter !important;
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: $gray-lighter !important;
+  }
+  a {
+  	color: $gray-lighter !important;
+  }
+}
+a {
+  color: $gray-lighter !important;
+}
+.dropdown-content {
+  background-color: $gray-base;
+}
+
+.header-middle,
+.our-shop,
+.ulockd-testimonial,
+.ulockd-blog,
+.ulockd-ffact-one{
+  background-color: transparent !important;
+}
+.header-nav .main-header-nav.navbar-scrolltofixed {
+  background-color: $black-11;	
+}
+.ulockd-ffact-one {
+	border: 1px solid $gray-lightest;
+}
+.ulockd-ffact-one p,
+.timer {
+  color: $white-ff !important;
+}
+nav.navbar.bootsnav.menu-style1 ul.nav li a.active, 
+nav.navbar.bootsnav.menu-style1 ul.nav li a:hover, 
+nav.navbar.bootsnav.menu-style1 ul.nav li a:focus,
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a:hover, 
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a:focus {
+  color: $white-ff !important;
+}
+nav.navbar.bootsnav ul.nav li a.active, 
+nav.navbar.bootsnav ul.nav li a:hover, 
+nav.navbar.bootsnav ul.nav li a:focus {
+  color: $gray-lightest !important;  
+}
+.fixedup .navbar-scrolltofixed.scroll-to-fixed-fixed,
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+  background-color: $black-11;
+}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
+  background-color: $black-11;
+}
+nav.navbar.bootsnav.menu-style1 ul.nav li a {
+  color: $gray-lightest !important;
+}
+nav.singlepage-dark,
+.multipage-dark {
+  background-color: $black-11 !important;
+}
+
+.ulockd-partner-thumb {
+  background-color: $gray-lightest !important;	
+}
+form {
+  &.ulockd-login-form,
+  &.ulockd-reg-form {
+	background-color: $gray-base;
+  }
+}
+
+@media only screen and (max-width:992px){
+  .ulockd-main-logo2 > img {margin-top: 10px;}
+  .bgc-rdark {background-color: $black-11 !important;}
+}
+
+@media only screen and (max-width:992px){
+  nav.menu-style1,
+  nav.navbar.bootsnav .navbar-toggle {
+	background-color: transparent !important;
+  }
+}
+.ulockd-service-three,
+.ficon-box, 
+.team-one {
+  background-color: transparent;
+}
+.testimonial-grid,
+.bp-details {
+  background-color: transparent !important;
+  border: 1px solid $gray-lightest;
+}
+.divider-triangle2.half-block2::before {
+  background-color: rgba($black-1rgb, $alpha8);
+}
+.color-black33 {
+  color: $white-ff !important;  
+}
+
+form.appointment_form,
+.footer-fst-col p,
+.twitter.style2 ul li,
+.ftr-phone, 
+.ftr-fax, 
+.ftr-mail,
+.footer-contact p {
+  color: $gray-base;
+}

@@ -1,0 +1,134 @@
+/* About Sass */
+
+//== First About Section
+.about-box {
+  position: relative;
+  h3 {
+	  position: relative;
+    @include transition(all 0.3s ease-in-out 0s);
+  }
+}
+.ab-thumb {
+  position: relative;
+  img {
+    @include box-shadow(0px 8px 5px -5px rgba($black-rgb, $alpha5));
+    @include transition(all 0.4s ease-in-out 0s);
+  }
+  .lbox-caption {
+    position: absolute;
+    top: 25%;
+  }
+}
+.diamond {
+  bottom: 0;
+  display: inline;
+  left: 38%;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  a {
+    border: 1px solid #ffffff;
+    font-size: 18px;
+    border-radius: 0 !important;
+    line-height: 60px;
+    padding: 8px 12px;
+    @include transition(all 0.4s ease 0s);
+    &:hover {
+      span {
+        color: $white-ff;
+      }
+    }
+    span {
+      color: $white-ff;
+      display: inline-flex;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+  }
+}
+.about-icon {
+  height: 60px;
+  margin: -30px auto 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 60px;
+  i {
+    color: $white-ff;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 60px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+.about-box2 {
+  border: 1px solid $gray-gainsboro;
+  padding: 25px 10px;
+  position: relative;
+  h3 {
+    position: relative;
+    @include transition(all 0.3s ease-in-out 0s);
+  }
+  &:hover {
+    .about-icon2 {      
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);      
+      i {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+.about-icon2 {
+  height: 60px;
+  margin: 0 auto;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  @include transition(all 0.3s ease-in-out 0s);
+  width: 60px;
+  i {
+    color: $white-ff;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 60px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    @include transition(all 0.3s ease-in-out 0s);
+  }
+}
+.ulockd-about-one {
+  &.inner {
+    background-color: $white-f7;
+  }
+}
+.ulockd-about-thumb {
+  position: relative;
+}
+.ulockd-main-title {
+  &.details {
+    h2 {
+      font-family: serif;
+      line-height: 30px;
+    }
+    h3 {
+      font-family: serif;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+}
+//== About BOTTOM VIDEO SECTION
+.ulockd-about-video {
+  margin-top: 12px;
+}
